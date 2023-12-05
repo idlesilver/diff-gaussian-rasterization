@@ -173,7 +173,7 @@ __global__ void preprocessCUDA(int P, int D, int M,
 	float2* points_xy_image,
 	float* depths,
 	float* cov3Ds,
-	float* rgb,
+	float* rgb,  // NOTE: This is used for return the 2D image
 	float4* conic_opacity,
 	const dim3 grid,
 	uint32_t* tiles_touched,
